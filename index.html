@@ -138,7 +138,19 @@ document.getElementById('scrollToTopButton').addEventListener('click', function 
     });
 
     showReview(currentIndex);
-    
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+    const mainMenu = document.getElementById('main-menu');
+    mainMenu.querySelector('ul').classList.toggle('show');
+});
+
+
+document.addEventListener('click', function (event) {
+    const mainMenu = document.getElementById('main-menu');
+    if (!event.target.matches('#menu-toggle') && !event.target.closest('#main-menu')) {
+        mainMenu.querySelector('ul.show').classList.remove('show');
+    }
+});
+
         
 </script>
 
