@@ -11,16 +11,15 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-r9Xz0Un2U6zj0L5CofSIB2PFLjK4Kc7ME5CUtdI3jZXaAFebr5uQV6KKt2ZYbPnd" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+<link rel="stylesheet" type="text/css" href="style.css"
+>
 </head>
 <body>
   <header>
         <h1>Animals Home</h1>
         <button id="menu-toggle" class="menu-toggle">
             <div class="bar"></div>
+
             <div class="bar"></div>
             <div class="bar"></div>
         </button>
@@ -140,24 +139,10 @@ document.getElementById('scrollToTopButton').addEventListener('click', function 
     });
 
     showReview(currentIndex);
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-    const mainMenu = document.getElementById('main-menu');
-    mainMenu.querySelector('ul').classList.toggle('show');
-});
-
-
-document.addEventListener('click', function (event) {
-    const mainMenu = document.getElementById('main-menu');
-    if (!event.target.matches('#menu-toggle') && !event.target.closest('#main-menu')) {
-        mainMenu.querySelector('ul.show').classList.remove('show');
-    }
-});
-
+    
         
 </script>
 
 </html>
-            
-         
     
         
