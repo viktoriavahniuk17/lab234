@@ -1,9 +1,9 @@
 body {
-    background: linear-gradient(to bottom, #F6C2A6, #FE8F70);
+    background: linear-gradient(to bottom, #e85483, #aa484f);
     font-family: 'Merriweather', serif;
 }
 header {
-    background: #FE8F70;
+    background: #fe70a6;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -15,7 +15,7 @@ section {
     border-radius: 10px;
 }
 h1, h2 {
-    color: #FE8F70;
+    color: #fe70a2;
 }
 ul {
     list-style: none;
@@ -77,16 +77,16 @@ scroll-behavior: smooth;
 }
 
 #scrollToTopButton:hover {
-background-color: #f18a15; 
+background-color: #f1155e; 
 }
 body {
-background: linear-gradient(to bottom, #F6C2A6, #FE8F70);
+background: linear-gradient(to bottom, #f6a6ba, #fe7091);
 font-family: 'Merriweather', serif;
 font-size: 16px;
 }
 
 h1, h2 {
-color: #FE8F70;
+color: #000000;
 font-family: 'Merriweather', serif; 
 font-size: 16px;
 }
@@ -106,7 +106,7 @@ li {
 margin: 5px 15px;
 font-family: 'Merriweather', serif;
 font-size: 14px;
-border: 2px solid #4d28a2;
+border: 2px solid #f5f4f6;
 padding: 5px 10px;
 border-radius: 10px;
 }
@@ -123,7 +123,7 @@ li {
 margin: 5px 15px;
 font-family: 'Caveat', cursive; 
 font-size: 14px; 
-border: 2px solid #4d28a2;
+border: 2px solid #ffffff;
 padding: 5px 10px;
 border-radius: 10px;
 }
@@ -147,7 +147,7 @@ transition: background-color 0.3s;
 }
 
 li:hover {
-background-color: #f18a15;
+background-color: #ab4c4c;
 }
 
 li:active {
@@ -191,7 +191,7 @@ display: block;
 
 .main-menu {
 display: none;
-background-color: #f19c9c;
+background-color: #000000;
 position: absolute;
 top: 80px;
 left: 0;
