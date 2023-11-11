@@ -1,0 +1,101 @@
+body {
+    font-family: 'Caveat', cursive;
+  }
+  
+  
+  .nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  
+  .nav .dropdown {
+    position: relative;
+  }
+  
+  .nav .dropdown .dropdown-menu {
+    position: absolute;
+    right: 0;
+  }
+  
+  
+  .link-logo {
+    font-family: 'Caveat', cursive;
+  }
+  
+  
+  .nav-search {
+    font-family: 'Caveat', cursive;
+  }
+  
+  
+  .btn-style {
+    font-family: 'Caveat', cursive;
+  }
+  
+ 
+  .header, .footer {
+    background-color: #ffdada;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  
+  .main {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#scrollToTopButton {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #342f2a;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  scroll-behavior: smooth; 
+}
+
+#scrollToTopButton:hover {
+  background-color: #f18a15; 
+}
+#footer {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background-color: #cfc8c1;
+      color: #080808;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: 'Caveat', cursive;
+  }
+  @media screen and (max-width: 768px) {
+  body {
+      font-size: 16px; 
+  }
+  
+  
+}
+.container {
+  max-width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #bab8d9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(206, 219, 194, 0.1);
+}

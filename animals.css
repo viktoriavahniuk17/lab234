@@ -1,0 +1,71 @@
+.frame {
+    border: 2px solid #5dc0e7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px solid #9172d8;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out; 
+}
+img:hover {
+    max-width: 300px;
+    max-height: 300px; 
+}
+
+body {
+    background: url('https://i.pinimg.com/564x/1c/c4/5f/1cc45f9e15744d8ebf7a8c582acfe7f4.jpg') no-repeat center center fixed;
+    background-size: 100%;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(168, 219, 195);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 5px 15px;
+}
+
+.frame {
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #cfc8c1;
+    color: #080808;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+}

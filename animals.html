@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+        <button id="menu-toggle" class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <nav id="main-menu" class="main-menu">
+            <ul>
+                <li><a href="main.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="animals.html">Тварини на усиновлення</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тварини на усиновлення</title>
+    <link rel="stylesheet" type="text/css" href="animals.css">
+    </head>
+<body>
+    <header>
+        <h1>Тварини на усиновлення</h1>
+    </header>
+    <section>
+        
+        <ul>
+            <li>
+                <div class="frame" data-animal="Кота">
+                    <img src="https://i.pinimg.com/564x/14/f1/93/14f19348ec6fb9af42ec317620ec7384.jpg" alt="Фото кота Мурчик">
+                </div>
+                Кіт Мурчик
+            </li>
+            <li>
+                <div class="frame" data-animal="Собаку">
+                    <img src="https://i.pinimg.com/564x/72/38/66/72386685efbc4be77c6601f2896ba598.jpg" alt="Фото собаки Рекс">
+                </div>
+                Собака Рекс
+            </li>
+            <li>
+                <div class="frame" data-animal="Попугая">
+                    <img src="https://i.pinimg.com/564x/ca/b3/09/cab309947a599e846ef5699d4b39c7bb.jpg" alt="Фото попугая Кеша">
+                </div>
+                Попугай Кеша
+            </li>
+            
+            <li>
+                <div class="frame" data-animal="Хом'яка">
+                    <img src="https://i.pinimg.com/564x/35/96/86/35968608d462a46ee43f7dbf3d437f7b.jpg" alt="Фото хом'як Стіва">
+                </div>
+                Xом'як Стів
+            </li>
+             
+        </ul>
+    </section>
+    <footer id="footer">
+        Виконила Вахнюк Віка🥰
+   </footer>
+   <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        var mainMenu = document.getElementById('main-menu');
+        if (mainMenu.style.display === 'block') {
+            mainMenu.style.display = 'none';
+        } else {
+            mainMenu.style.display = 'block';
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+    var frames = document.querySelectorAll('.frame');
+
+    frames.forEach(function (frame) {
+        frame.addEventListener('click', function () {
+            var animal = frame.getAttribute('data-animal');
+            alert('Ви вибрали ' + animal + '!');
+        });
+    });
+});
+
+</script>
+</body>
+</html>
+
+

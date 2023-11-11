@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Притулок для тварин</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato:wght@300&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+        <h1>Animals Home</h1>
+        <button id="menu-toggle" class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <button id="signin-btn" class="signin-btn"><a href="login.html">Sign in</a> >
+     <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <form>
+                <label for="username">Ім'я користувача:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Увійти</button>
+            </form>
+        </div>
+    </div>
+        <nav id="main-menu" class="main-menu">
+            <ul>
+                <li><div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About
+                    </a>
+                   <ul class="dropdown-menu">
+                      <li class="highlight-li"><a class="dropdown-item" href="main.html">Головна</a></li>
+                      <li><a class="dropdown-item" href="about.html">Про нас</a></li>
+                      <li><a class="dropdown-item" href="animals.html">Тварини на усиновлення</a></li>
+                      <li><a class="dropdown-item" href="contact.html">Контакти</a></li>
+                    </ul>
+                  </div></li>
+                
+                <li><a href="main.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="animals.html">Тварини на усиновлення</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                
+                <li><div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Меню
+                    </a>
+                   <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="login.html">Логін</a></li>
+                      <li><a class="dropdown-item" href="test.html">Опитування</a></li>
+                      <input type="text" placeholder="Пошук...">
+                        <button>Пошук</button>
+                       </ul>
+                  </div> </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>Про нас</h2>
+            <p>Притулок для тварин - це особливе місце, де відбувається справжнє диво. Це місце, де зустрічаються серця з великими душами, де люди з усього світу об'єднуються, щоб надати допомогу тим, хто не може говорити або захищати себе.
+               Це не лише місце, де тварини чекають на своїх власників, але й де вони отримують навички, які допомагають їм адаптуватися до нового життя в сім'ї. Волонтери і співробітники притулку роблять надзвичайну роботу, допомагаючи тваринам знайти другий шанс на щасливе майбутнє.
+               Притулок для тварин - це не лише місце допомоги, а й місце надії, де виявляється справжнє добро і людяність. Він дарує тваринам і їхнім опікунам можливість спільно пройти важкий шлях до щастя та взаємного кохання.
+            </p>
+        </section>
+        <section id="reviews">
+            <h2>Відгуки про наш притулок</h2>
+        
+            <div class="review-container">
+               
+                <div class="review">
+                    <img src="https://i.pinimg.com/564x/69/cd/df/69cddf195dcca86eb45d87bbacadd7d0.jpg" alt="Фото відгуку 1">
+                    <h3>Іван Петрович</h3>
+                    <p>Притулок для тварин - це чудове місце, де турбуються про бездомних тварин і надають їм другий шанс на щасливе життя. Я прийшов сюди, щоб знайти вірного друга, і знайшов його. Наша собака з притулку, якому ми дали ім'я Рекс, став найкращим другом нашої родини. Дякуємо всім працівникам і волонтерам притулку за їхню неймовірну роботу.</p>
+                </div>
+        
+               
+                <div class="review">
+                    <img src="https://i.pinimg.com/564x/69/cd/df/69cddf195dcca86eb45d87bbacadd7d0.jpg" alt="Фото відгуку 2">
+                    <h3>Марія Іванівна</h3>
+                    <p>Притулок для тварин - це місце, де дійсно звертають увагу на долю кожної тварини. Моя кішка, яку я придбала в цьому притулку, стала справжньою принцесою в нашому будинку. Я дуже вдячна за те, що притулок надає шанс на краще життя бездомним тваринам.</p>
+                </div>
+        
+               
+                <div class="review">
+                    <img src="https://i.pinimg.com/564x/69/cd/df/69cddf195dcca86eb45d87bbacadd7d0.jpg" alt="Фото відгуку 3">
+                    <h3>Олена Михайлівна</h3>
+                    <p>Притулок для тварин - це місце, де працюють справжні ангели, які допомагають тваринам знаходити новий дім та сім'ю. Я знайшла свого чотирилапого друга тут і не можу бути щасливішою. Дякую притулку за їхню роботу та заботу про тварин.</p>
+                </div>
+            </div>
+        
+            <div class="controls">
+                <button id="prev">←</button>
+                <button id="next">→</button>
+            </div>
+        </section>
+        
+        
+        </div>
+        <div class="scroll-to-top">
+            <a href="#" id="scrollToTopButton">↑</a>
+        </div>
+        <footer id="footer">
+             Виконила Вахнюк Віка🥰
+        </footer>
+        
+
+</body>
+<script>
+   
+document.getElementById('scrollToTopButton').addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+});
+
+    const reviews = document.querySelectorAll('.review');
+    let currentIndex = 0;
+
+    function showReview(index) {
+        reviews.forEach((review, i) => {
+            if (i === index) {
+                review.style.display = 'block';
+            } else {
+                review.style.display = 'none';
+            }
+        });
+    }
+
+    document.getElementById('prev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+        showReview(currentIndex);
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % reviews.length;
+        showReview(currentIndex);
+    });
+
+    showReview(currentIndex);
+    
+        
+</script>
+
+</html>
