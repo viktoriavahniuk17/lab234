@@ -277,7 +277,7 @@ li:active {
 }
 
 .dropdown-menu {
-    display: block;
+    display: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 0;
@@ -382,7 +382,7 @@ nav a:hover {
 
 @media screen and (max-width: 767px) {
     .main-menu ul {
-        display: none;
+        display: block;
         flex-direction: column;
         width: 100%;
         position: absolute;
