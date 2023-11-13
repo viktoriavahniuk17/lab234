@@ -2,7 +2,7 @@ body {
     font-family: 'Agbalumo', serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #e16ce1, #ea4698); 
+    background: linear-gradient(to bottom, #e16ce1, #ea4698);
 }
 
 header {
@@ -39,7 +39,8 @@ nav ul li {
     box-shadow: 0 0 10px rgba(206, 219, 194, 0.1);
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 24px;
 }
 
@@ -83,9 +84,9 @@ header h1 {
     top: 10px;
     right: 20px;
     text-align: right;
-    border: 1px solid #fff; 
-    padding: 10px; 
-    border-radius: 5px; 
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .menu a {
@@ -100,8 +101,8 @@ header h1 {
 
 .search-container {
     display: inline-block;
-    border: 1px solid #fff; 
-    border-radius: 5px; 
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
 
 .search input {
@@ -142,7 +143,7 @@ body {
     padding: 10px;
     display: none;
     border: 2px solid #000;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .review img {
@@ -171,11 +172,11 @@ body {
     text-decoration: none;
     transition: background-color 0.3s;
     cursor: pointer;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 #scrollToTopButton:hover {
-    background-color: #f18a15; 
+    background-color: #f18a15;
 }
 
 ul {
@@ -198,7 +199,7 @@ li {
 }
 
 li:active {
-    background-color: #ff5733; 
+    background-color: #ff5733;
 }
 
 #footer {
@@ -215,7 +216,7 @@ li:active {
 
 @media screen and (max-width: 768px) {
     body {
-        font-size: 16px; 
+        font-size: 16px;
     }
 }
 
@@ -254,14 +255,11 @@ li:active {
     }
 
     .main-menu {
-        display: none;
-        background-color: #f19c9c;
+        display: block;
         position: absolute;
-        top: 80px;
         left: 0;
         width: 100%;
         text-align: center;
-        padding: 20px;
     }
 
     .main-menu ul {
@@ -272,12 +270,17 @@ li:active {
     .main-menu li {
         margin: 10px 0;
     }
+    .container{
+        margin-top: 60px;
+    }
+
 }
 
-.dropdown-menu { display: none;
+.dropdown-menu {
+    display: block;
     position: absolute;
     background-color: #e6c1c1;
-    box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 0;
     top: 100%;
@@ -294,7 +297,7 @@ li:active {
 
 .signin-btn {
     padding: 10px 20px;
-    background-color: #af4c54; 
+    background-color: #af4c54;
     color: white;
     border: none;
     border-radius: 5px;
@@ -302,7 +305,7 @@ li:active {
     position: fixed;
     top: 10px;
     right: 10px;
-    z-index: 999; 
+    z-index: 999;
 }
 
 
@@ -365,19 +368,21 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 nav {
     background-color: #e5d0b8;
     padding: 10px;
 }
 
 nav a {
-    color: #722121; 
+    color: #722121;
     text-decoration: none;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
+
 @media screen and (max-width: 767px) {
     .main-menu ul {
         display: none;
@@ -418,6 +423,3 @@ nav a:hover {
         background-color: inherit;
     }
 }
-
-
-   
