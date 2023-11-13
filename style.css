@@ -15,7 +15,6 @@ header {
 
 nav {
     background-color: #e5d0b8;
-    padding: 10px;
 }
 
 nav ul {
@@ -278,9 +277,7 @@ li:active {
 }
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #e6c1c1;
+    display: block;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 0;
@@ -372,7 +369,6 @@ button {
 
 nav {
     background-color: #e5d0b8;
-    padding: 10px;
 }
 
 nav a {
