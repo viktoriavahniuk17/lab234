@@ -270,14 +270,15 @@ li:active {
     .main-menu li {
         margin: 10px 0;
     }
-    .container{
+
+    .container {
         margin-top: 60px;
     }
 
 }
 
 .dropdown-menu {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #e6c1c1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
