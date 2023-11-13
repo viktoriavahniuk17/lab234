@@ -382,13 +382,8 @@ nav a:hover {
 
 @media screen and (max-width: 767px) {
     .main-menu ul {
-        display: block;
         flex-direction: column;
         width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background-color: #f9f9f9;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 10px;
         z-index: 1;
