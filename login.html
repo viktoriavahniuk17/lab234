@@ -34,4 +34,19 @@
         Виконила Вахнюк Віка🥰
    </footer>
 </body>
+    <script>document.getElementById("register-button").addEventListener("click", function () {
+    var emailInput = document.getElementById("email").value;
+    if (validateEmail(emailInput)) {
+        alert("Email is valid. Registration successful!");
+        // Additional registration logic can be added here
+    } else {
+        alert("Invalid email. Please enter a valid email address.");
+    }
+});
+
+function validateEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+</script>
 </html>
