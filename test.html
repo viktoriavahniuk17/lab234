@@ -157,4 +157,87 @@ window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
 
+<script>
+  // Facebook SDK
+  window.fbAsyncInit = function () {
+    FB.init({
+      appId: 'YOUR_FACEBOOK_APP_ID',
+      autoLogAppEvents: true,
+      xfbml: true,
+      version: 'v13.0',
+    });
+  };
+
+  (function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, 'script', 'facebook-jssdk');
+
+  // Twitter SDK
+  !function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, 'script', 'twitter-wjs');
+
+  // GitHub SDK (optional)
+  // You can use GitHub OAuth for authentication
+</script>
+
+<!-- Replace 'YOUR_FACEBOOK_APP_ID' with your actual Facebook App ID -->
+<div class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" onclick="loginWithFacebook()">
+  <svg class="bi me-1" width="16" height="16">
+    <use xlink:href="#facebook"></use>
+  </svg>
+  Увійти через Facebook
+</div>
+
+<!-- Replace 'YOUR_TWITTER_HANDLE' with your actual Twitter handle -->
+<div class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" onclick="loginWithTwitter()">
+  <svg class="bi me-1" width="16" height="16">
+    <use xlink:href="#twitter"></use>
+  </svg>
+  Увійти через Twitter
+</div>
+
+<!-- Replace 'YOUR_GITHUB_REPO' with your actual GitHub repository -->
+<div class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" onclick="loginWithGitHub()">
+  <svg class="bi me-1" width="16" height="16">
+    <use xlink:href="#github"></use>
+  </svg>
+  Увійти через GitHub
+</div>
+
+<script>
+  function loginWithFacebook() {
+    FB.login(function (response) {
+      // Handle the login response
+      console.log(response);
+    }, { scope: 'email' }); // Add any additional permissions you need
+  }
+
+  function loginWithTwitter() {
+    // Implement Twitter login logic
+    console.log('Login with Twitter');
+  }
+
+  function loginWithGitHub() {
+    // Implement GitHub login logic
+    console.log('Login with GitHub');
+  }
+</script>
+
 </html>
